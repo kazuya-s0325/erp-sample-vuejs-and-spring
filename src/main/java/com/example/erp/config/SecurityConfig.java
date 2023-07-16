@@ -1,4 +1,4 @@
-// WebSecurityConfigureAdapter is deprecated
+// WebSecurityConfigurerAdapter is deprecated
 package com.example.erp.config;
 
 import org.springframework.context.annotation.Bean;
