@@ -10,6 +10,8 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    // csrf() method has been deprecated
+    http.csrf().ignoringRequestMatchers("/sample");
     return http.build();
   }
 }
