@@ -35,6 +35,12 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  mounted(){
+    axios.post('http://localhost:8080/sample', {"id" : 4})
+    .then(response => {
+      console.log(response);
+    })
   }
 }
 </script>
