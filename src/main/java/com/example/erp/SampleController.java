@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class SampleController {
   @PostMapping("/sample")
+  @CrossOrigin
   public ResultObject post(@RequestBody SampleForm sampleForm) {
     int id = sampleForm.getId();
     ResultObject resultObject = new ResultObject();
